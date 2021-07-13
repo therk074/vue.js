@@ -8,9 +8,9 @@
 </head>
 <body>
     <div id="vue01">
-        {{name}} <!-- เรียกตัวแปรด้วยการใช้ {{ตัวแปร}} --> 
-        {{getName()}} <!-- เรียกmethod ใส่ชื่อfunction--> 
-        {{setName('TEST')}}   
+         <!-- data binding เพื่อเอาค่าของตัวแปรไปใส่ใน ""-->
+         <a v-bind:href="web">link</a>
+         <input type="text" v-bind:name="name">
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
