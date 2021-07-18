@@ -8,7 +8,8 @@
 </head>
 <body>
     <div id="vue01">  
-        <!-- การกำหนดค่าเรียก function event ก็คือแค่ใส่ v-bind v-on: เข้าไป แทน onclick -->
+        <!-- การกำหนดค่าเรียก function event ก็คือแค่ใส่ v-bind v-on: เข้าไป แทน onclick
+        ต่อให้เอา add() ออกเหลือ add เฉยๆก็ยังทำงานปกติเหมือนเดิม -->
          <button type="button" name="button" v-on:click="add()">Increase</button>   
          <button type="button" name="button" v-on:click="less()">Decrease</button>   
          อายุ {{age}}
