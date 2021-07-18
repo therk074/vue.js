@@ -4,22 +4,13 @@ new Vue({ //สร้าง object
         name:"thekkao", //ตัวแปร
         job:"full stack developer",
         age:23, 
-        web:'https://github.com/therk074/vue.js'
+        web:'https://github.com/therk074/vue.js',
+        count:0
     },
-    methods: { //function ทำงานกับ object
-        getName:function(){
-            return this.name
-        },
-        setName:function(n){
-            return this.name = n //รับค่ามาเปลี่ยนชื่อตัวแปร
-        },
-        add:function(){
-            this.age++;
-            console.log(this.age);
-        },
-        less:function(){
-            this.age--;
-            console.log(this.age);
+    methods: {
+        addCount:function(){
+            this.count++;
+            console.log(this.count);
         }
     },
 })

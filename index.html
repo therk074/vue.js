@@ -7,12 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    <div id="vue01">  
-        <!-- การกำหนดค่าเรียก function event ก็คือแค่ใส่ v-bind v-on: เข้าไป แทน onclick
-        ต่อให้เอา add() ออกเหลือ add เฉยๆก็ยังทำงานปกติเหมือนเดิม -->
-         <button type="button" name="button" v-on:click="add()">Increase</button>   
-         <button type="button" name="button" v-on:click="less()">Decrease</button>   
-         อายุ {{age}}
+    <div id="vue01">   
+        เพิ่มค่า count {{count}} ด้วยการจิ้มคีย์บอร์ดแต่ละครั้ง
+        <!-- v-on:keyup จิ้มคีย์บอร์ดแต่ละตัว // v-on:keyup.enter จิ้ม enter แต่ละครั้ง-->
+        <!-- v-on:keyup.ตัวไหนก็ได้ เลือกได้เลยว่าจะเป็นชื่อไหน -->
+        <a href="https://v3.vuejs.org/guide/migration/keycode-modifiers.html#keycode-modifiers">KeyCode Modifiers</a>
+        <input type="text" v-on:keyup.backspace="addCount()">
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
