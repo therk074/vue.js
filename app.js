@@ -12,6 +12,14 @@ new Vue({ //สร้าง object
         },
         setName:function(n){
             return this.name = n //รับค่ามาเปลี่ยนชื่อตัวแปร
+        },
+        add:function(){
+            this.age++;
+            console.log(this.age);
+        },
+        less:function(){
+            this.age--;
+            console.log(this.age);
         }
     },
 })
