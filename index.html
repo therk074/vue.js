@@ -8,11 +8,12 @@
 </head>
 <body>
     <div id="vue01">   
-        เพิ่มค่า count {{count}} ด้วยการจิ้มคีย์บอร์ดแต่ละครั้ง
-        <!-- v-on:keyup จิ้มคีย์บอร์ดแต่ละตัว // v-on:keyup.enter จิ้ม enter แต่ละครั้ง-->
-        <!-- v-on:keyup.ตัวไหนก็ได้ เลือกได้เลยว่าจะเป็นชื่อไหน -->
-        <a href="https://v3.vuejs.org/guide/migration/keycode-modifiers.html#keycode-modifiers">KeyCode Modifiers</a>
-        <input type="text" v-on:keyup.backspace="addCount()">
+        <!-- 2 way data binding / ผูก html + vue ถ้ามีการรับส่งค่า ให้เปลี่ยน data ภายใน vue ในทันที -->
+        <!-- ถ้าเปลี่ยนใน vue ใน data ก็เปลี่ยนทันที เช่นพิมพ์ชื่อลง textbox มันก็จะแสดงที่เปลี่ยนเลยทันทีตามค่าที่ผูกกัน -->
+        <input type="text" v-model="name">  <!-- v-model="ชื่อตัวแปรในvue" -->
+         <hr> <!-- เส้นคั่น -->
+         <h3>ชื่อ {{name}}</h3>
+
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
