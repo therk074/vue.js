@@ -8,15 +8,10 @@
 </head>
 <body>
     <div id="vue01">   
-        <!-- 2 way data binding / select -->
-        แมวหรือหมา
-        <select v-model="pet" required>
-            <option value="">กรุณาเลือก</option>
-            <option value="dog">ม๋า</option>
-            <option value="cat">แหม๋ว</option>
-        </select>
-        <hr>
-        แน่นอนว่า {{pet}}
+        <!-- v-if / กำหนด like เป็น false ให้ onclick like เป็น true ถึงจะแสดงข้อความ-->
+        <!-- !like คือสลับค่า true/false ของตัวแปรไปเรื่อยๆ-->
+        <button type="button" name="button" v-on:click="like=!like">like it</button>
+        <h3 v-if="like">like krub</h3>
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
