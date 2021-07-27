@@ -2,19 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Hola!</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
     <div id="vue01">   
-        <!-- 2 way data binding / checkbox / array -->
-        เลือกวงไหนดี <br>
-        <input type="checkbox" v-model="girlgroups" value="red velvet" v-model="girlgroups"> red velvet
-        <input type="checkbox" v-model="girlgroups" value="wjsn"> wjsn
-        <input type="checkbox" v-model="girlgroups" value="izone"> izone
+        <!-- 2 way data binding / radio-->
+        กินไรดี <br>
+        <input type="radio" v-model="dinner" value="ชาบู"> ชาบู
+        <input type="radio" v-model="dinner" value="หมูกระทะ"> หมูกระทะ 
         <hr>
-        วงที่เลือก {{girlgroups}}
+        กิน {{dinner}}
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>

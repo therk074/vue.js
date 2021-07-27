@@ -5,7 +5,8 @@ new Vue({ //สร้าง object
         job:"full stack developer",
         age:23, 
         web:'https://github.com/therk074/vue.js',
-        girlgroups:[]
+        girlgroups:[],
+        dinner:''
     },
     methods: {
         addCount:function(){
