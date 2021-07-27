@@ -8,12 +8,15 @@
 </head>
 <body>
     <div id="vue01">   
-        <!-- 2 way data binding / radio-->
-        กินไรดี <br>
-        <input type="radio" v-model="dinner" value="ชาบู"> ชาบู
-        <input type="radio" v-model="dinner" value="หมูกระทะ"> หมูกระทะ 
+        <!-- 2 way data binding / select -->
+        แมวหรือหมา
+        <select v-model="pet" required>
+            <option value="">กรุณาเลือก</option>
+            <option value="dog">ม๋า</option>
+            <option value="cat">แหม๋ว</option>
+        </select>
         <hr>
-        กิน {{dinner}}
+        แน่นอนว่า {{pet}}
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>

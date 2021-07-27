@@ -6,7 +6,8 @@ new Vue({ //สร้าง object
         age:23, 
         web:'https://github.com/therk074/vue.js',
         girlgroups:[],
-        dinner:''
+        dinner:'',
+        pet:''
     },
     methods: {
         addCount:function(){
