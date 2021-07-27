@@ -8,12 +8,13 @@
 </head>
 <body>
     <div id="vue01">   
-        <!-- 2 way data binding / ผูก html + vue ถ้ามีการรับส่งค่า ให้เปลี่ยน data ภายใน vue ในทันที -->
-        <!-- ถ้าเปลี่ยนใน vue ใน data ก็เปลี่ยนทันที เช่นพิมพ์ชื่อลง textbox มันก็จะแสดงที่เปลี่ยนเลยทันทีตามค่าที่ผูกกัน -->
-        <input type="text" v-model="name">  <!-- v-model="ชื่อตัวแปรในvue" -->
-         <hr> <!-- เส้นคั่น -->
-         <h3>ชื่อ {{name}}</h3>
-
+        <!-- 2 way data binding / checkbox / array -->
+        เลือกวงไหนดี <br>
+        <input type="checkbox" v-model="girlgroups" value="red velvet" v-model="girlgroups"> red velvet
+        <input type="checkbox" v-model="girlgroups" value="wjsn"> wjsn
+        <input type="checkbox" v-model="girlgroups" value="izone"> izone
+        <hr>
+        วงที่เลือก {{girlgroups}}
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
