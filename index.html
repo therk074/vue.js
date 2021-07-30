@@ -8,10 +8,13 @@
 </head>
 <body>
     <div id="vue01">   
-        <!-- v-if / กำหนด like เป็น false ให้ onclick like เป็น true ถึงจะแสดงข้อความ-->
-        <!-- !like คือสลับค่า true/false ของตัวแปรไปเรื่อยๆ-->
-        <button type="button" name="button" v-on:click="like=!like">like it</button>
-        <h3 v-if="like">like krub</h3>
+        <!-- loop array v-for="ตัวแปรที่กำหนดค่า จาก ตัวแปร" แล้วนำตัวแปรที่กำหนดใหม่มาแสดง-->
+        Array 1 มิติ<p v-for="array in data_array">{{array}}</p><!-- array 1 มิติ -->
+        <hr>
+        Array 2 มิติ<p v-for="array2 in data2">{{array2}}</p><!-- array 2 มิติ -->
+        <!-- Array 2 มิติ ออกมาเป็น { "name": "aurora", "edu": { "university": "มช" }, "age": 24, "job": "singer" } -->
+        <!-- ถ้าจะเรียกตามkeyที่ค่าname ให้เรียก array2.name ได้ -->
+        
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
