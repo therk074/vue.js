@@ -9,13 +9,15 @@
 <body>
     <div id="vue01">   
         ชื่อพนักงาน<input v-model="newData.empName">
-        เงินเเดือน<input v-model="newData.empSalary">
+        เงินเดือน<input v-model="newData.empSalary">
         <br>
         <button @click="AddEmployee">Submit</button>
         <hr>
-        <p v-for=data in empData>
-            ชื่อ {{data.empName}} เงินเดือน {{data.empSalary}}
-        </p>
+        <ul>
+            <li v-for="data in empData">
+                ชื่อ {{data.empName}} เงินเดือน {{data.empSalary}}
+            </li>
+        </ul>
     </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
