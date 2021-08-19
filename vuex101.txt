@@ -1,0 +1,22 @@
+keyword ของ vuex
+
+state เป็นข้อมูลที่ถูกจัดเก็บใน store
+getters การทำ process ที่ดึง state ไปใช้ เอาไปแสดงผล ไปแยกประเภท
+actions ทำ action/event ต่างๆ เช่นสั่งให้ไปแก้ไขข้อมูล ก็จะสั่ง mutation ไปแก้ไข ไปบันทึก ไปดึงข้อมูล
+mutation การเปลี่ยนแปลงข้อมูลของ state ใน store ที่ได้รับการ commit มาจาก action
+
+เช่นบันทึกอาหาร
+state ต้มยำกุ้ง
+action บันทึก
+mutation ใส่ต้มยำกุ้งใน state
+
+set mutation คือตัว insert update ตัว state
+
+getters: { 
+        food: state => state.food,
+        กับ
+        food:(state)=>{
+            return state.food;
+        }
+        เขียนเหมือนกัน แต่อันแรกแค่เป็น short form
+    }
