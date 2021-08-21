@@ -1,3 +1,3 @@
 <template>
-    <div>test admin page</div>
+    <div>test admin page</div> 
 </template>
