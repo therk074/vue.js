@@ -1,0 +1,11 @@
+folders แต่ละ folders
+asset พวกไฟล์ css รูปภาพ ที่ต้อง complie คำสั่ง
+components header footer ที่ไปแสดงหน้าเว็บ
+layout โครงสร้าง เค้าโครงหน้าเว็บที่ไปใช้กับตัว page
+pages หน้าเว็บ แสดงผล
+middleware เรียก function ก่อนการ render หน้าเว็บ กรอง request
+plugin เอามาทำงานในโปรเจค import หรือทำเองมาใช้
+static พวกสิ่งที่ไม่ผ่านการ compile
+store คือ vuex จัดการ state
+
+nuxt.config.js เอาไว้ตั้งค่าทั้งโปรเจค เช่นกำหนด meta tag header loading plugin
