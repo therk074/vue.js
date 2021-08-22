@@ -11,7 +11,6 @@
   </div>
 </template>
 <script>
-export default {
-  layout: "coreLayout",
+export default { 
 };
 </script>
