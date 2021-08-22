@@ -8,7 +8,7 @@
           :img-src=item.image
           :text=item.text
         ></b-carousel-slide>
-      </div>
+      </div> 
     </b-carousel>
   </b-container>
 </template>
